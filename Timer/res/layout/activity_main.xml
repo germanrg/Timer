@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+	
+    <TextView
+        android:id="@+id/clocktext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="487dp"
+        android:layout_marginTop="110dp"
+        android:keepScreenOn="true"
+        android:text="@string/clockText"
+        android:textColor="@color/negro"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    
+    <ProgressBar
+        android:id="@+id/hoursClock"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="16dp"  
+        android:layout_marginLeft="416dp"
+        android:indeterminate="false"
+        android:max="82800"
+        android:progress="82800"
+        android:progressDrawable="@drawable/hoursclock" />
+    
+    <ProgressBar
+        android:id="@+id/minutesClock"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="165dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="43dp"  
+        android:layout_marginLeft="444dp"
+        android:indeterminate="false"
+        android:max="3540"
+        android:progress="3540"
+        android:progressDrawable="@drawable/minutesclock" />
+    
+    <ProgressBar
+        android:id="@+id/secondsClock"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="66dp"  
+        android:layout_marginLeft="467dp"
+        android:indeterminate="false"
+        android:max="60"
+        android:progress="60"
+        android:progressDrawable="@drawable/secondsclock" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+</RelativeLayout>
